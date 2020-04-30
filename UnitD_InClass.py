@@ -1,53 +1,40 @@
 # Joshua Nelson Gomes (Joshua)
 # CIS 41A Spring 2020
-# In-Class Assignment B
+# In-Class Assignment D
 
-# String methods
+# Dictionary Basics 
 
-name = input('Whats your name?\n')
+sweets = {
+	 'apple': 'sauce',
+	 'peach': 'cobbler',
+	 'carrot': 'cake',
+	 'strawberry': 'sorbet',
+	 'banana': 'cream pie',
+	 }
 
-print(name.upper())
+sweets['mango'] = 'sticky rice'
+sweets['strawberry'] = 'shortcake'
 
-print("Length: ", len(name))
+del sweets['carrot']
 
-print("Fourth letter of your name: ", name[3])
+print (f'apple dessert is: {(sweets["apple"])}')
+print (f'banana dessert exists: {"banana" in sweets}')
+print (f'pear dessert exists: {"pear" in sweets}')
+print (f'{sweets.keys()}')
+print (f'{sweets.values()}')
+print (f'{sweets.items()}')
 
-name2 = name.replace('o', 'x')
+# Combining Dictionaries
 
-print("New Name: ", name2)
 
-print("Original Name: " , name)
 
-# Counting and Finding
 
-quote = "Believe you can and you're halfway there."
 
-print("'a' Count: ", quote.count('a'))
 
-print("Index of all the \"a\" characters")
-index = quote.find('a')
-print(index)
-index = quote.find('a', index+1)
-print(index)
-index = quote.find('a', index+1)
-print(index)
-index = quote.find('a', index+1)
-print(index)
+
+
 
 '''
-Output:
+Execution Results:
 
-Whats your name?
-George Washington
-GEORGE WASHINGTON
-Length:  17
-Fourth letter of your name:  r
-New Name:  Gexrge Washingtxn
-Original Name:  George Washington
-'a' Count:  4
-Index of all the "a" characters
-13
-16
-28
-32
 '''
