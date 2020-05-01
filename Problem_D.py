@@ -20,7 +20,10 @@ print (f'List after swap: {list1}')
 
 # Part Three – Tuple Basics
 
+movie = ('Casablanca', '1942', 'romantic drama')
+title, year, genre = movie
 
+print (f'My favorite movie is: {title}')
 
 
 '''
