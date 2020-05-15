@@ -15,7 +15,7 @@ def printListElement(a_list, a_num):
 
 def main():
 	hello()
-	help(hello)
+	#help(hello)
 	myInt = 3
 	myList = [0, 1, 2]
 
@@ -51,32 +51,28 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-	
-
-
-
-
-
-
 '''
 Execution results:
-Check ==
-list1 == list2:  True
-list1 == list3:  True
-list2 == list3:  True
+Hello World
 
-Check "is"
-list1 is list2:  True
-list1 is list3:  False
-list2 is list3:  False
+Help on function hello in module __main__:
 
-Print i.d
-List1 ID:  4371886960
-List2 ID:  4371886960
-List3 ID:  4371966144
+hello()
+    This function prints the message "Hello World"
 
-List1 printed:  [2, 'goodbye', 4.1, 'hello', 8]
-List2 printed:  [2, 'goodbye', 4.1, 'hello', 8]
-List3 printed:  [4.1, 'hello']
+Error: bad index number.
+Original ID of myInt in main is 4323487568
+Original ID of myList in main is 4329166320
+Original ID of myList's last element in main is 4323487536
+Original ID of parameter in byVal 4323487568
+ID of parameter in byVal after change 4323487792
+Original ID of parameter in byRef 4329166320
+Original ID of parameter's last element in byRef is 4323487536
+ID of parameter in byRef after change 4329166320
+ID of parameter's last element in byRef after change is 4323487760
+ID of myInt in main after call to byVal is 4323487568
+ID of myList in main after call to byRef is 4329166320
+ID of myList's last element after call to byRef is 4323487760
+myInt is now: 3
+myList is now: [0, 1, 9]
 '''
