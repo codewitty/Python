@@ -14,14 +14,14 @@ def printGroupMembers(groupName, *members):
 		print (f'{name}')
 
 def buildBell(rows):
-	l1 = [[1]]
-	l2 = []
-
-	for i in (1, rows):
-		for j in (0, i+1):
-			l1[i][j] = l1[i-1][j]
-
-	return l1
+    l1 = [[1]]
+    for i in range(1, rows):
+        l2 = []
+        l2.append(l1[i-1][len(l1)-1])
+        for j in range(0, i):
+            l2.append(l1[i-1][j] + l2[j])   
+        l1.append(l2)
+    return l1
 
 
 
