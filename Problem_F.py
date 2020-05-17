@@ -23,7 +23,9 @@ def buildBell(rows):
         l1.append(l2)
     return l1
 
-
+def printBell(lst):
+	for s in lst:
+		print (*s)
 
 
 def main():
@@ -34,7 +36,8 @@ def main():
 	groupB = ["Group B", "Sasha", "Migel", "Tanya", "Hiroto"]
 	printGroupMembers(groupB[0], groupB[1], groupB[2], groupB[3], groupB[4])
 
-	print (f'{buildBell(8)}')
+	printBell(buildBell(8))
+
 if __name__ == '__main__':
     main()
 
