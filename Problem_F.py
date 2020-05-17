@@ -24,8 +24,7 @@ def buildBell(rows):
     return l1
 
 def printBell(lst):
-	for s in lst:
-		print (*s)
+	print('\n'.join(' '.join(map(str,sl)) for sl in lst))
 
 
 def main():
