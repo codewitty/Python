@@ -24,7 +24,13 @@ def buildBell(rows):
     return l1
 
 def printBell(lst):
-	print('\n'.join(' '.join(map(str,sl)) for sl in lst))
+	for i in range(len(lst)):
+		for j in range(0, i+1):
+			print (f'{lst[i][j]:>5}', end = '') 
+		print (f'\n')
+		
+
+#print('\n'.join(' '.join(map(str,sl)) for sl in lst))
 
 
 def main():
@@ -34,6 +40,7 @@ def main():
 	printGroupMembers("Group A", "Li", "Audry", "Jia")
 	groupB = ["Group B", "Sasha", "Migel", "Tanya", "Hiroto"]
 	printGroupMembers(groupB[0], groupB[1], groupB[2], groupB[3], groupB[4])
+	print (f'\nBuild a Bell Triangle Output with 8 Rows:\n')
 
 	printBell(buildBell(8))
 
@@ -42,4 +49,43 @@ if __name__ == '__main__':
 
 '''
 Execution results:
+
+Cost (unitPrice x quantity) = 80
+Shipping = 8
+Handling = 5
+Total = 93
+
+Cost (unitPrice x quantity) = 45
+Shipping = 10
+Handling = 15
+Total = 70
+
+Members of Group A
+Li
+Audry
+Jia
+Members of Group B
+Sasha
+Migel
+Tanya
+Hiroto
+
+Build a Bell Triangle Output with 8 Rows:
+
+    1
+
+    1    2
+
+    2    3    5
+
+    5    7   10   15
+
+   15   20   27   37   52
+
+   52   67   87  114  151  203
+
+  203  255  322  409  523  674  877
+
+  877 1080 1335 1657 2066 2589 3263 4140
+
 '''
