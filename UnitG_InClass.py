@@ -26,19 +26,23 @@ def main():
 
 # Part Two
 
+	dict_states = {}
 	with open('Cities.csv', newline='') as csvfile:
 		reader = csv.DictReader(csvfile)
 		for row in reader:
-			print(row['City'], row['State'], row['Population'])
+			t_dict = (row['City'], row['State'])
+			dict_states.update({t_dict: row['Population']})
+
+	for state, pop in dict_states.items(): 
+		print(state[0], state[1], pop)
 
 	city = input('Please enter a city:')
 	state = input('Please enter a state:')
+	t_check = (city, state)
 
-	with open('Cities.csv', newline='') as csvfile:
-		reader = csv.DictReader(csvfile)
-		for row in reader:
-			if row['City'] == city and row['State'] == state: 
-				print(f"{city} {state} has a population of {row['Population']}")
+	for state in dict_states:
+		if state == t_check:
+			print(f'{t_check[0]} {t_check[1]} has a population of {dict_states.get(state)}')
 
 if __name__ == '__main__':
     main()
