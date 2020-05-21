@@ -4,40 +4,44 @@
 
 import csv
 
+def main():
+
 # Part One
-fout = open('ZenOfPython.txt', 'wt')
+	fout = open('ZenOfPython.txt', 'wt')
 
-print(f'Beautiful is better than ugly.\nExplicit is better than implicit.', file=fout)
+	print(f'Beautiful is better than ugly.\nExplicit is better than implicit.', file=fout)
 
-fout.close()
+	fout.close()
 
-fout = open('ZenOfPython.txt', 'at')
+	fout = open('ZenOfPython.txt', 'at')
 
-print (f'Readability counts.\nIf the implementation is hard to explain, it\'s a bad idea.', file = fout)
-fout.close()
+	print (f'Readability counts.\nIf the implementation is hard to explain, it\'s a bad idea.', file = fout)
+	fout.close()
 
-fin = open('ZenOfPython.txt', 'rt' )
-lines = fin.readlines()
+	fin = open('ZenOfPython.txt', 'rt' )
+	lines = fin.readlines()
 
-for line in lines:
-     print(line, end='')
+	for line in lines:
+		 print(line, end='')
 
 # Part Two
 
-with open('Cities.csv', newline='') as csvfile:
-	reader = csv.DictReader(csvfile)
-	for row in reader:
-		print(row['City'], row['State'], row['Population'])
+	with open('Cities.csv', newline='') as csvfile:
+		reader = csv.DictReader(csvfile)
+		for row in reader:
+			print(row['City'], row['State'], row['Population'])
 
-city = input('Please enter a city:')
-state = input('Please enter a state:')
+	city = input('Please enter a city:')
+	state = input('Please enter a state:')
 
-with open('Cities.csv', newline='') as csvfile:
-	reader = csv.DictReader(csvfile)
-	for row in reader:
-		if row['City'] == city and row['State'] == state: 
-			print(f"{city} {state} has a population of {row['Population']}")
+	with open('Cities.csv', newline='') as csvfile:
+		reader = csv.DictReader(csvfile)
+		for row in reader:
+			if row['City'] == city and row['State'] == state: 
+				print(f"{city} {state} has a population of {row['Population']}")
 
+if __name__ == '__main__':
+    main()
 
 '''
 Execution Results:

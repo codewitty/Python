@@ -1,7 +1,6 @@
 # Joshua Nelson Gomes (Joshua)
 # CIS 41A Spring 2020
-# In-Class Assignment F
-
+# Unit F take-home assignment
 
 def hello():
 	'This function prints the message "Hello World"'
@@ -21,7 +20,7 @@ def main():
 
 	printListElement(myList, 3)
 
-	print (f'Original ID of myInt in main is {id(myInt)}') 
+	print (f'Original ID of myInt in main is {id(myInt)}')
 	print (f'Original ID of myList in main is {id(myList)}')
 	print (f'Original ID of myList\'s last element in main is {id(myList[len(myList)-1])}')
 
@@ -54,12 +53,9 @@ if __name__ == '__main__':
 '''
 Execution results:
 Hello World
-
 Help on function hello in module __main__:
-
 hello()
     This function prints the message "Hello World"
-
 Error: bad index number.
 Original ID of myInt in main is 4323487568
 Original ID of myList in main is 4329166320
