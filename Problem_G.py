@@ -21,7 +21,7 @@ def main():
 
 	f.close()
 
-# Part Two – A Dictionary of Lists
+# Part Two – A Dictionary of LisortedList
 
 	f = open('USPresidents.txt', 'rt')
 	pres_dict = {}
@@ -45,42 +45,53 @@ def main():
 # Part Three – – Dictionary Keys and Sets
 
 	f = open('USPresidents.txt', 'rt')
-	prez_dict = {}
+	presidentCount_dict = {}
 
 	for x in f:
 		line = x.split()
-		if line[0] in prez_dict:
-		  prez_dict[line[0]].append(line[1])
+		if line[0] in presidentCount_dict:
+		  presidentCount_dict[line[0]].append(line[1])
 		else:
-		  prez_dict[line[0]] = [line[1]]
+		  presidentCount_dict[line[0]] = [line[1]]
 	
-	for k,v in pres_dict.items():
-		pres_dict[k] = len(v)
-	print (pres_dict)
+	for k,v in presidentCount_dict.items():
+		presidentCount_dict[k] = len(v)
 
-	st_set = {'CA', 'TX', 'FL', 'NY', 'IL', 'PA', 'OH', 'GA', 'NC', 'MI'}
-	st2 = set(pres_dict).intersection(st_set)
-	print (f' {len(st2)} of the 10 high population states have had presidents born in them:')
+	highPopStates = {'CA', 'TX', 'FL', 'NY', 'IL', 'PA', 'OH', 'GA', 'NC', 'MI'}
+	highPopStates_wPresidents = set(pres_dict) & highPopStates
+	print (f'{len(highPopStates_wPresidents)} of the 10 high population states have had presidents born in them:')
+
+	sortedList = sorted(highPopStates_wPresidents)
+
+	for state in sortedList:
+		print(f'{state} {presidentCount_dict[state]}')
 
 	f.close()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     main()
+
+'''
+Execution Results:
+
+Highest population state in the Midwest is: IL 12802000.
+The state with the most presidents is VA with 8 presidents:
+George_Washington
+James_Madison
+James_Monroe
+John_Tyler
+Thomas_Jefferson
+William_Henry_Harrison
+Woodrow_Wilson
+Zachary_Taylor
+8 of the 10 high population states have had presidents born in them:
+CA 1
+GA 1
+IL 1
+NC 2
+NY 5
+OH 7
+PA 1
+TX 2
+
+'''
