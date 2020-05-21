@@ -2,8 +2,6 @@
 # CIS 41A Spring 2020
 # Take Home Assignment G
 
-import csv
-
 def main():
 
 # Part One
