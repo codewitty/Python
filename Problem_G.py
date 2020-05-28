@@ -32,7 +32,6 @@ def main():
 		  pres_dict[line[0]] = [line[1]]
 
 	f.close()
-
 	maxcount = max(len(v) for v in pres_dict.values())
 
 	for k, v in pres_dict.items():
