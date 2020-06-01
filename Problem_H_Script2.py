@@ -9,12 +9,13 @@ class BritCoins:
 
 	def __init__(self, **kwargs):
 		self.totalPennies = 0
-		if 'pound' in kwargs:
-			self.totalPennies += (kwargs.get('pound') * BritCoins.__coinValues.get('pound'))
-		if 'shilling' in kwargs:
-			self.totalPennies += (kwargs.get('shilling') * BritCoins.__coinValues.get('shilling'))
-		if 'penny' in kwargs:
-			self.totalPennies += (kwargs.get('penny') * BritCoins.__coinValues.get('penny'))
+		for key,value in kwargs.items():
+			if key == 'pound':
+				self.totalPennies += (kwargs.get('pound') * BritCoins.__coinValues.get('pound'))
+			if key == 'shilling':
+				self.totalPennies += (kwargs.get('shilling') * BritCoins.__coinValues.get('shilling'))
+			if key == 'penny':
+				self.totalPennies += (kwargs.get('penny') * BritCoins.__coinValues.get('penny'))
 
 	def __add__(self, other):
 		total = self.totalPennies + other.totalPennies
