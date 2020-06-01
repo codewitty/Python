@@ -15,11 +15,11 @@ def main():
 		if 'miscError' in kwargs: 
 			print(f'Misc error #{kwargs.get("miscError")}')
 
-	overseerSystem(temperature = 550)
-	overseerSystem(temperature = 475)
-	overseerSystem(temperature = 450, miscError = 404)
-	overseerSystem(CO2 = .18)
-	overseerSystem(CO2 = .2, miscError = 418)
+	overseerSystem(**{"temperature" : 550})
+	overseerSystem(**{"temperature" : 475})
+	overseerSystem(**{"temperature" : 450, "miscError":404})
+	overseerSystem(**{"CO2" : .18})
+	overseerSystem(**{"CO2" : .2, "miscError":418})
 
 if __name__ == '__main__':
     main()

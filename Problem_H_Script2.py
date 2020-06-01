@@ -18,11 +18,11 @@ class BritCoins:
 
 	def __add__(self, other):
 		total = self.totalPennies + other.totalPennies
-		return BritCoins(penny = total)
+		return BritCoins(**{"penny" : total})
 		
 	def __sub__(self, other):
 		total = self.totalPennies - other.totalPennies
-		return BritCoins(penny = total)
+		return BritCoins(**{"penny" : total})
 
 	def __str__(self):
 		self.p = self.totalPennies // BritCoins.__coinValues.get('pound')
@@ -32,8 +32,8 @@ class BritCoins:
 
 
 def main():
-	c1 = BritCoins(pound = 4, shilling = 24, penny = 3)
-	c2 = BritCoins(pound = 3, shilling = 4, penny = 5)
+	c1 = BritCoins(**{"pound": 4, "shilling": 24, "penny": 3})
+	c2 = BritCoins(**{"pound": 3, "shilling": 4, "penny": 5})
 	c3 = c1 + c2
 	c4 = c1 - c2
 
