@@ -14,7 +14,7 @@ class Circle:
 class Cylinder(Circle):
 	def __init__(self, radius, height):
 		self.height = height
-		Circle.__init__(self,radius)
+		Circle.__init__(self, radius)
 
 	def getVolume(self):
 		return Circle.getArea(self) * self.height
@@ -23,6 +23,8 @@ def main():
 
 	circle = Circle(4)
 	print (f'Circle area is: {circle.getArea():.2f}')
+	print(circle.radius)
+	print(circle.getArea())
 	cylinder = Cylinder(2, 5)
 	print (f'Cylinder volume is: {cylinder.getVolume():.2f}')
 

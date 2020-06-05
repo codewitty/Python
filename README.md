@@ -10,8 +10,16 @@
 ## Table of Contents 
 
 
-- [30-Days-of-Code](#30-days-of-code)
-	* [Backspace String Compare.cpp](#1-backspace-string-compare)
+- [In Class Assignments](#in-class-assignments)
+	* [Exercise A.cpp](#1-exercise-A)
+	* [Exercise B.cpp](#2-exercise-B)
+	* [Exercise A.cpp](#1-exercise-A)
+	* [Exercise A.cpp](#1-exercise-A)
+	* [Exercise A.cpp](#1-exercise-A)
+	* [Exercise A.cpp](#1-exercise-A)
+	* [Exercise A.cpp](#1-exercise-A)
+	* [Exercise A.cpp](#1-exercise-A)
+	* [Exercise A.cpp](#1-exercise-A)
 - [Arrays 101](#arrays-101)
 	* [Duplicate Zeros.cpp](#1-duplicate-zeroes)
 	* [Merge Sorted Array.cpp](#2-merge-sorted-array)
