@@ -2,8 +2,6 @@
 # CIS 41A Spring 2020
 # In-Class Assignment I
 
-import math
-
 class LibraryPatron:
 	def __init__(self, name):
 		self.name = name
@@ -24,7 +22,8 @@ class LibraryPatron:
 
 	def printCheckedOutBooks(self):
 			print (f'{self.name} has the following books checked out:')
-			print (f' {self.booksCheckedOut}')
+			for x in range(len(self.booksCheckedOut)):
+				print (f'{self.booksCheckedOut[x]}')
 
 class AdultPatron(LibraryPatron):
 	def __init__(self, name):
@@ -86,7 +85,22 @@ if __name__ == '__main__':
 '''
 Execution Results:
 
-Circle area is: 50.27
-Cylinder volume is: 62.83
+Sorry Jimmy this is book is only for adult patrons.
+Jimmy has checked out Alice in Wonderland
+Jimmy has checked out The Cat in the Hat
+Jimmy has the following books checked out:
+Alice in Wonderland
+The Cat in the Hat
+Sorry Jimmy you are at your limit of 2 books
+Jimmy has returned Alice in Wonderland
+Jimmy has checked out Harry Potter and the Sorcerer's Stone
+Jimmy has the following books checked out:
+The Cat in the Hat
+Harry Potter and the Sorcerer's Stone
+Sophia has checked out The Da Vinci Code
+Sophia has checked out The Hobbit
+Sophia has the following books checked out:
+The Da Vinci Code
+The Hobbit
 
 '''
