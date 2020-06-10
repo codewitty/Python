@@ -37,4 +37,21 @@ if __name__ == '__main__':
 '''
 Execution Results:
 
+Sorry Jimmy this is book is only for adult patrons.
+Jimmy has checked out Alice in Wonderland
+Jimmy has checked out The Cat in the Hat
+Jimmy has the following books checked out:
+Alice in Wonderland
+The Cat in the Hat
+Sorry Jimmy you are at your limit of 2 books
+Jimmy has returned Alice in Wonderland
+Jimmy has checked out Harry Potter and the Sorcerer's Stone
+Jimmy has the following books checked out:
+The Cat in the Hat
+Harry Potter and the Sorcerer's Stone
+Sophia has checked out The Da Vinci Code
+Sophia has checked out The Hobbit
+Sophia has the following books checked out:
+The Da Vinci Code
+The Hobbit
 '''
