@@ -9,7 +9,7 @@ class LibraryPatron:
 
 	def checkOutBook(self, checkOutLimit, Book):
 		bookName = Book.title
-		if (checkOutLimit >= 1):
+		if checkOutLimit > len(self.booksCheckedOut):
 			self.booksCheckedOut.append(Book)
 			print (f'{self.name} has checked out {bookName}')
 		else:
@@ -32,11 +32,7 @@ class AdultPatron(LibraryPatron):
 		self.checkOutLimit = 4
 
 	def checkOutBook(self, Book):
-		if (self.checkOutLimit >= 1):
-			LibraryPatron.checkOutBook(self, self.checkOutLimit, Book)
-			self.checkOutLimit -= 1
-		else:
-			print (f'Sorry {self.name} you are at your limit of 4 books')
+		LibraryPatron.checkOutBook(self, self.checkOutLimit, Book)
 
 class JuvenilePatron(LibraryPatron):
 	def __init__(self, name):
@@ -46,10 +42,5 @@ class JuvenilePatron(LibraryPatron):
 	def checkOutBook(self, Book):
 		if (Book.bookType == "Adult"):
 			print (f'Sorry {self.name}, {Book.title} is an adult book.') 
-
-		elif (self.checkOutLimit >= 1 and Book.bookType == "Juvenile"):
-			LibraryPatron.checkOutBook(self, self.checkOutLimit, Book)
-			self.checkOutLimit -= 1
-
 		else:
-			print (f'Sorry {self.name} you are at your limit of 2 books')
+			LibraryPatron.checkOutBook(self, self.checkOutLimit, Book)

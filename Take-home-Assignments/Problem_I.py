@@ -1,6 +1,6 @@
 # Joshua Nelson Gomes (Joshua)
 # CIS 41A Spring 2020
-# In-Class Assignment I
+# Take-Home Assignment I
 
 class LibraryPatron:
 	def __init__(self, name):
@@ -8,7 +8,7 @@ class LibraryPatron:
 		self.booksCheckedOut = []
 
 	def checkOutBook(self, checkOutLimit, bookTitle):
-		if (checkOutLimit >= 1):
+		if checkOutLimit > len(self.booksCheckedOut):
 			self.booksCheckedOut.append(bookTitle)
 			print (f'{self.name} has checked out {bookTitle}')
 		else:
@@ -31,11 +31,7 @@ class AdultPatron(LibraryPatron):
 		self.checkOutLimit = 4
 
 	def checkOutBook(self, book):
-		if (self.checkOutLimit >= 1):
-			LibraryPatron.checkOutBook(self, self.checkOutLimit, book[0])
-			self.checkOutLimit -= 1
-		else:
-			print (f'Sorry {self.name} you are at your limit of 4 books')
+		LibraryPatron.checkOutBook(self, self.checkOutLimit, book[0])
 
 class JuvenilePatron(LibraryPatron):
 	def __init__(self, name):
@@ -44,14 +40,9 @@ class JuvenilePatron(LibraryPatron):
 
 	def checkOutBook(self, book):
 		if (book[1] == "Adult"):
-			print (f'Sorry {self.name} this is book is only for adult patrons.') 
-
-		elif (self.checkOutLimit >= 1 and book[1] == "Juvenile"):
-			LibraryPatron.checkOutBook(self, self.checkOutLimit, book[0])
-			self.checkOutLimit -= 1
-
+			print (f'Sorry {self.name}, {book[0]} is an adult book.') 
 		else:
-			print (f'Sorry {self.name} you are at your limit of 2 books')
+			LibraryPatron.checkOutBook(self, self.checkOutLimit, book[0])
 
 def main():
 
