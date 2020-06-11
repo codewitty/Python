@@ -16,10 +16,8 @@ class LibraryPatron:
 			print (f'Sorry {self.name} you are at your limit of {self.checkOutLimit} books')
 
 	def returnBook(self, Book):
-		bookName = Book.title
 		self.booksCheckedOut.remove(Book)
-		print (f'{self.name} has returned {bookName}')
-		self.checkOutLimit += 1
+		print (f'{self.name} has returned {Book.title}')
 
 	def printCheckedOutBooks(self):
 			print (f'{self.name} has the following books checked out:')
