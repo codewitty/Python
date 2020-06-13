@@ -1,6 +1,6 @@
 # Joshua Nelson Gomes (Joshua)
 # CIS 41A Spring 2020
-# Take-Home Assignment J
+# Take Home Assignment J
 
 import random
 
