@@ -4,8 +4,9 @@
 
 import random
 
-print(f'{sorted(random.sample([*range(1, 16)], 10))}')
+#print(f'{sorted(random.sample([*range(16)], 10))}')
 
+print(f'{sorted(random.sample(range(1, 16), 10))}')
 
 '''
 Execution Results:
