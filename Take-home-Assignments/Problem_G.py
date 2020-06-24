@@ -51,8 +51,12 @@ def main():
 		else:
 		  presidentCount_dict[line[0]] = [line[1]]
 	
-	for k,v in presidentCount_dict.items():
-		presidentCount_dict[k] = len(v)
+	for state in presidentCount_dict:
+		if state in presidentCount_dict:
+			presidentCount_dict[line[0]] += 1
+		else:
+			presidentCount_dict[line[0]] = 1
+		# presidentCount_dict[k] = len(v)
 
 	highPopStates = {'CA', 'TX', 'FL', 'NY', 'IL', 'PA', 'OH', 'GA', 'NC', 'MI'}
 	highPopStates_wPresidents = set(pres_dict) & highPopStates
