@@ -22,7 +22,7 @@
 	* [Exercise I.cpp](#1-exercise-A)
 	* [Exercise J.cpp](#1-exercise-A)
 	* [Exercise K.cpp](#1-exercise-A)
-- [Arrays 101](#arrays-101)
+- [Take Home Assignments](#take-home-assignments)
 	* [Duplicate Zeros.cpp](#1-duplicate-zeroes)
 	* [Merge Sorted Array.cpp](#2-merge-sorted-array)
 	* [Remove Elements.cpp](#3-remove-elements)
