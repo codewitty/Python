@@ -115,11 +115,11 @@ Create a set named class2 and populate it with the students Sasha, Migel, Tanya,
 Add John to class1.\
 Print a sorted list of students who are in both classes.\
 Print a sorted list of all students.\
-Test to see if Sasha is in class1. \
+Test to see if Sasha is in class1.
 
 
 #### 5. Exercise E
-#####First Script
+#####First Script\
 **Determining the genre of a movie.**\
 Create a list called scifi that contains the elements Alien, Solaris, Inception, Moon.\
 Create a list called comedy that contains the elements Borat, Idiocracy, Superbad, Bridesmaids.\
@@ -127,7 +127,7 @@ Ask the user for the name of a movie.\
 Using if/elif/else, determine and print the genre of the movie.\
 Test three times: first with Moon, then Superbad, then Dunkirk.\
 \
-**Second Script - two parts**\
+**Second Script - two parts**
 1) Using range with a for loop.\
 Use a for loop to print the even integers in descending order from 10 to 0 inclusive.\
 2) Looping through dictionary items.\
