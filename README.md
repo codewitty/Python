@@ -118,24 +118,25 @@ Print a sorted list of all students.\
 Test to see if Sasha is in class1. \
 
 
-#### 5. Valid Mountain Array
-- Given an array A of integers, return true if and only if it is a valid mountain array.\
-Recall that A is a mountain array if and only if:
-	* A.length >= 3
-	* There exists some i with 0 < i < A.length - 1 such that:
-		+ A[0] < A[1] < ... A[i-1] < A[i]
-		+ A[i] > A[i+1] > ... > A[A.length - 1]
-- My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Valid_Mountain_Array.cpp/" target="_blank">`here`</a>.\
-Find the problem <a href="https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3251/" target="_blank">`here`</a>.
-
-#### 6. Replace Elements with Greatest Element on Right Side
-- Given an array arr, replace every element in that array with the greatest element among the elements to its right, and replace the last element with -1.\
-After doing so, return the array.
-	* Example 1:
-		+ Input: arr = [17,18,5,4,6,1]
-		+ Output: [18,6,6,6,1,-1]
-- My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Replace_Elements_with_Greatest_Element_on_Right_Side.cpp/" target="_blank">`here`</a>.\
-Find the problem <a href="https://leetcode.com/explore/learn/card/fun-with-arrays/511/in-place-operations/3259/" target="_blank">`here`</a>.
+#### 5. Exercise E
+#####First Script
+**Determining the genre of a movie.**\
+Create a list called scifi that contains the elements Alien, Solaris, Inception, Moon.\
+Create a list called comedy that contains the elements Borat, Idiocracy, Superbad, Bridesmaids.\
+Ask the user for the name of a movie.\
+Using if/elif/else, determine and print the genre of the movie.\
+Test three times: first with Moon, then Superbad, then Dunkirk.\
+\
+**Second Script - two parts**\
+1) Using range with a for loop.\
+Use a for loop to print the even integers in descending order from 10 to 0 inclusive.\
+2) Looping through dictionary items.\
+Create a dictionary named movies and populate it with these key value pairs:\
+The Wizard of Oz:1939\
+The Godfather:1972\
+Lawrence of Arabia:1962\
+Raging Bull:1980\
+Loop through the dictionary items and print the year in which each movie was made. Output should be alpha sorted by movie title.
 
 <!---
 #### 
