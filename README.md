@@ -40,33 +40,31 @@
 - These assignments were short in-class challenges that introduced a new concept.
 
 #### 1. Backspace String Compare
-- Create a height and width for a rectangle. Print the height, width, and area of the rectangle in the following format, with the columns aligned:\
+- Create a height and width for a rectangle. Print the height, width, and area of the rectangle in the following format, with the columns aligned:
 
 height: x.x\
 width:  x.x\
 area:   x.xxxxxxx...\
 Test with width 7.1 and height 2.9\
-and in the same script use floor division to divide the width and height by 2 and save these values in the height and width.\
+and in the same script use floor division to divide the width and height by 2 and save these values in the height and width.
 
 ---
 
-### Arrays 101
-- Solutions for the Arrays Sequence on LeetCode.\
-Find the challenge <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/" target="_blank">`here`</a>
-
-#### 1. Duplicate Zeroes
-- Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.\
-Note that after backspacing an empty text, the text will continue empty.\
-My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Duplicate%20Zeros.cpp/" target="_blank">`here`</a>.\
-Find the problem <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/3245/" target="_blank">`here`</a>.
-
-#### 2. Merge Sorted Array
-- Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.\
-Note:\
-The number of elements initialized in nums1 and nums2 are m and n respectively.\
-You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2.\
-My solution is <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/3253/" target="_blank">`here`</a>.\
-Find the problem <a href="https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3291/" target="_blank">`here`</a>.
+#### 2. Exercise B
+- String methods
+Ask the user for a name (test with George Washington).
+Print the name in all uppercase letters.
+Print the length of the name.
+Print the 4th character of the name (r).
+Create a variable called name2. Assign to name2 the name with all "o" characters replaced with "x"s.
+Print name2.
+Print the original name.
+Counting and Finding
+Assign the text "Believe you can and you're halfway there." to a variable called quote (this is a quote from Theodore Roosevelt).
+Count how many "a" characters there are, print the result.
+Print the index of all the "a" characters.
+Hint: Except for the first find, set the start location for the next find as the previous location found index + 1. The second argument in the find method is the index where the find starts looking.
+A fuller explanation of the find method is given in string-methods
 
 #### 3. Remove Element
 - Given an array nums and a value val, remove all instances of that value in-place and return the new length.\
