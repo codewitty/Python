@@ -34,25 +34,19 @@
 	* [Problem I.cpp](#1-exercise-A)
 	* [Problem J.cpp](#1-exercise-A)
 	* [Problem K.cpp](#1-exercise-A)
-	* [Duplicate Zeros.cpp](#1-duplicate-zeroes)
-	* [Merge Sorted Array.cpp](#2-merge-sorted-array)
-	* [Remove Elements.cpp](#3-remove-elements)
-	* [Check If N and Its Double Exist.cpp](#4-check-if-n-and-its-double-exist)
-	* [Valid Mountain Array.cpp](#5-valid-mountain-array)
-	* [Replace Elements with Greatest Element on Right Side.cpp](#6-replace-elements-with-greatest-element-on-right-side)
-- [Random](#random)
-	* [2. Add Two Numbers.cpp](#add-two-numbers)
-
 ---
 
-### 30 Days of Code
-- This is the code I wrote for the 30 day challenge on LeetCode. Find the challenge <a href="https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/" target="_blank">`here`</a>
+### In Class Assignments
+- These assignments were short in-class challenges that introduced a new concept.
 
 #### 1. Backspace String Compare
-- Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.\
-Note that after backspacing an empty text, the text will continue empty.\
-My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/30-day-leetcoding-challenge/Backspace%20String%20Compare.cpp/" target="_blank">`here`</a>.\
-Find the problem <a href="https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3291/" target="_blank">`here`</a>.
+- Create a height and width for a rectangle. Print the height, width, and area of the rectangle in the following format, with the columns aligned:\
+
+height: x.x\
+width:  x.x\
+area:   x.xxxxxxx...\
+Test with width 7.1 and height 2.9\
+and in the same script use floor division to divide the width and height by 2 and save these values in the height and width.\
 
 ---
 
