@@ -51,7 +51,7 @@ and in the same script use floor division to divide the width and height by 2 an
 ---
 
 #### 2. Exercise B
-- String methods:\
+- **String methods:**\
 Ask the user for a name (test with George Washington).\
 Print the name in all uppercase letters.\
 Print the length of the name.\
@@ -59,14 +59,14 @@ Print the 4th character of the name (r).\
 Create a variable called name2. Assign to name2 the name with all "o" characters replaced with "x"s.\
 Print name2.
 Print the original name.\
-Counting and Finding\
+**Counting and Finding**\
 Assign the text "Believe you can and you're halfway there." to a variable called quote (this is a quote from Theodore Roosevelt).\
 Count how many "a" characters there are, print the result.\
 Print the index of all the "a" characters.\
 Hint: Except for the first find, set the start location for the next find as the previous location found index + 1. The second argument in the find method is the index where the find starts looking.
 
 #### 3. Exercise C
-- List script\
+- **List script**\
 Create a list called list1 that has elements 2, 4.1, 'hello'.\
 Copy list1 to list2 so that list2 is an alias of list1 (shallow copy).\
 Copy list1 to list3 so that list3 is a new list (true deep copy).\
@@ -79,7 +79,7 @@ Remove the first element from list3.\
 Print each of the three lists. Do the results match what you expected?
 
 #### 4. Exercise D 
-- 1) Dictionary Basics:\
+- **Dictionary Basics:**\
 Create a dictionary of fruit and desserts made from the fruit. The fruit should be the key and the dessert should be the value. Use these key value pairs:\
 apple:sauce\
 peach:cobbler\
@@ -95,7 +95,7 @@ See if a pear dessert exists.\
 Print the keys in the dessert dictionary.\
 Print the values in the dessert dictionary.\
 Print the key-value pairs in the dessert dictionary.\
-2) Combining dictionaries:\
+**Combining dictionaries:**\
 Create a dictionary named capitols1 and populate it with these key value pairs:\
 Alabama:Montgomery\
 Alaska:Juneau\
@@ -109,7 +109,7 @@ Connecticut:Hartford\
 Be sure that the California capitol is Sac. and not Sacramento.\
 Using the dictionary update() method, update capitols1 with capitols2.\
 Print the sorted capitols (values). Note the updated value of California's capitol.\
-3) Sets Basics:\
+**Sets Basics:**\
 Create a set named class1 and populate it with the students Li, Audry, Jia, Migel, Tanya.\
 Create a set named class2 and populate it with the students Sasha, Migel, Tanya, Hiroto, Audry.\
 Add John to class1.\
