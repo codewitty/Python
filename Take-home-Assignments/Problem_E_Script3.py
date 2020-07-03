@@ -6,6 +6,9 @@
 
 quote = "Believe you can and you're halfway there."
 count = 0
+print (f' a found at index {quote[1:5]}')
+print (f'{quote.find("a")}')
+
 
 for elem in quote:
 	if elem == 'a':

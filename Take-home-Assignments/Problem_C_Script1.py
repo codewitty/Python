@@ -29,8 +29,10 @@ list3.sort()
 print (f'n) Sorted list3 is: {list3}')
 
 list5 = [list1,list2]
+list6 = [list1[num]*list2[num] for num in range(3)]
 
 print (f'o) list5 is: {list5}')
+print (f'o) list6 is: {list6}')
 
 print (f'p) Value 4 from list5: {list5[1][3]}')
 
