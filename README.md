@@ -119,7 +119,7 @@ Test to see if Sasha is in class1.
 
 
 #### 5. Exercise E
-#####First Script\
+##### First Script
 **Determining the genre of a movie.**\
 Create a list called scifi that contains the elements Alien, Solaris, Inception, Moon.\
 Create a list called comedy that contains the elements Borat, Idiocracy, Superbad, Bridesmaids.\
