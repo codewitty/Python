@@ -51,27 +51,33 @@ and in the same script use floor division to divide the width and height by 2 an
 ---
 
 #### 2. Exercise B
-- String methods
-Ask the user for a name (test with George Washington).
-Print the name in all uppercase letters.
-Print the length of the name.
-Print the 4th character of the name (r).
-Create a variable called name2. Assign to name2 the name with all "o" characters replaced with "x"s.
+- String methods:\
+Ask the user for a name (test with George Washington).\
+Print the name in all uppercase letters.\
+Print the length of the name.\
+Print the 4th character of the name (r).\
+Create a variable called name2. Assign to name2 the name with all "o" characters replaced with "x"s.\
 Print name2.
-Print the original name.
-Counting and Finding
-Assign the text "Believe you can and you're halfway there." to a variable called quote (this is a quote from Theodore Roosevelt).
-Count how many "a" characters there are, print the result.
-Print the index of all the "a" characters.
-Hint: Except for the first find, set the start location for the next find as the previous location found index + 1. The second argument in the find method is the index where the find starts looking.
+Print the original name.\
+Counting and Finding\
+Assign the text "Believe you can and you're halfway there." to a variable called quote (this is a quote from Theodore Roosevelt).\
+Count how many "a" characters there are, print the result.\
+Print the index of all the "a" characters.\
+Hint: Except for the first find, set the start location for the next find as the previous location found index + 1. The second argument in the find method is the index where the find starts looking.\
 A fuller explanation of the find method is given in string-methods
 
-#### 3. Remove Element
-- Given an array nums and a value val, remove all instances of that value in-place and return the new length.\
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.\
-The order of elements can be changed. It doesn't matter what you leave beyond the new length.\
-My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Remove_Element.cpp/" target="_blank">`here`</a>.\
-Find the problem <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/526/deleting-items-from-an-array/3247/" target="_blank">`here`</a>.
+#### 3. Exercise C
+- List script\
+Create a list called list1 that has elements 2, 4.1, 'hello'.\
+Copy list1 to list2 so that list2 is an alias of list1 (shallow copy).\
+Copy list1 to list3 so that list3 is a new list (true deep copy).\
+Using ==, compare list1 to list2, list 1 to list 3, and list 2 to list3.\
+Using is, compare list1 to list2, list 1 to list 3, and list 2 to list3.\
+Print the ids of list 1, list2, and list3.\
+Append a new element with value 8 to list1.\
+After the first element of list2, insert an element 'goodbye'.\
+Remove the first element from list3.\
+Print each of the three lists. Do the results match what you expected?\
 
 #### 4. Check If N and Its Double Exist
 - Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 * M). \
