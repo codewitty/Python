@@ -39,7 +39,7 @@
 ### In Class Assignments
 - These assignments were short in-class challenges that introduced a new concept.
 
-#### 1. Backspace String Compare
+#### 1. Exercise A
 - Create a height and width for a rectangle. Print the height, width, and area of the rectangle in the following format, with the columns aligned:
 
 height: x.x\
@@ -63,8 +63,7 @@ Counting and Finding\
 Assign the text "Believe you can and you're halfway there." to a variable called quote (this is a quote from Theodore Roosevelt).\
 Count how many "a" characters there are, print the result.\
 Print the index of all the "a" characters.\
-Hint: Except for the first find, set the start location for the next find as the previous location found index + 1. The second argument in the find method is the index where the find starts looking.\
-A fuller explanation of the find method is given in string-methods
+Hint: Except for the first find, set the start location for the next find as the previous location found index + 1. The second argument in the find method is the index where the find starts looking.
 
 #### 3. Exercise C
 - List script\
@@ -77,16 +76,47 @@ Print the ids of list 1, list2, and list3.\
 Append a new element with value 8 to list1.\
 After the first element of list2, insert an element 'goodbye'.\
 Remove the first element from list3.\
-Print each of the three lists. Do the results match what you expected?\
+Print each of the three lists. Do the results match what you expected?
 
-#### 4. Check If N and Its Double Exist
-- Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 * M). \
-More formally check if there exists two indices i and j such that :\
-i != j\
-0 <= i, j < arr.length\
-arr[i] == 2 * arr[j]\
-My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Check_If_N_and_Its_Double_Exist.cpp/" target="_blank">`here`</a>.\
-Find the problem <a href="https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3250/" target="_blank">`here`</a>.
+#### 4. Exercise D 
+- 1) Dictionary Basics:\
+Create a dictionary of fruit and desserts made from the fruit. The fruit should be the key and the dessert should be the value. Use these key value pairs:\
+apple:sauce\
+peach:cobbler\
+carrot:cake\
+strawberry:sorbet\
+banana:cream pie\
+Add the mango fruit to the dictionary. Its dessert is sticky rice.\
+Change the strawberry dessert to shortcake.\
+Carrot is not a fruit, so remove carrot from the dictionary.\
+Print the apple dessert.\
+See if a banana dessert exists.\
+See if a pear dessert exists.\
+Print the keys in the dessert dictionary.\
+Print the values in the dessert dictionary.\
+Print the key-value pairs in the dessert dictionary.\
+2) Combining dictionaries:\
+Create a dictionary named capitols1 and populate it with these key value pairs:\
+Alabama:Montgomery\
+Alaska:Juneau\
+Arizona:Phoenix\
+Arkansas:Little Rock\
+California:Sacramento\
+Create a dictionary named capitols2 and populate it with these key value pairs:\
+California:Sac.\
+Colorado:Denver\
+Connecticut:Hartford\
+Be sure that the California capitol is Sac. and not Sacramento.\
+Using the dictionary update() method, update capitols1 with capitols2.\
+Print the sorted capitols (values). Note the updated value of California's capitol.\
+3) Sets Basics:\
+Create a set named class1 and populate it with the students Li, Audry, Jia, Migel, Tanya.\
+Create a set named class2 and populate it with the students Sasha, Migel, Tanya, Hiroto, Audry.\
+Add John to class1.\
+Print a sorted list of students who are in both classes.\
+Print a sorted list of all students.\
+Test to see if Sasha is in class1. \
+
 
 #### 5. Valid Mountain Array
 - Given an array A of integers, return true if and only if it is a valid mountain array.\
